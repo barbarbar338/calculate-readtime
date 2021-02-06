@@ -1,6 +1,6 @@
 {
 	"name": "calculate-readtime",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "dist",
 	"typings": "dist",
 	"repository": {
@@ -23,7 +23,7 @@
 		"lint": "eslint --fix .",
 		"lint:watch": "onchange . -- eslint --fix {{changed}}"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"@types/chai": "^4.2.14",
 		"@types/mocha": "^8.2.0",
 		"@types/node": "^14.14.16",
@@ -33,14 +33,12 @@
 		"eslint": "^7.16.0",
 		"eslint-config-prettier": "^7.1.0",
 		"eslint-plugin-import": "^2.22.1",
+		"husky": "^4.3.8",
 		"mocha": "^8.2.1",
 		"onchange": "^7.1.0",
 		"prettier": "^2.2.1",
 		"ts-node": "^9.1.1",
 		"typescript": "^4.1.3"
-	},
-	"devDependencies": {
-		"husky": "^4.3.8"
 	},
 	"husky": {
 		"pre-commit": "npm run format",
