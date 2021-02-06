@@ -1,11 +1,11 @@
 {
-	"name": "readtime",
+	"name": "calculate-readtime",
 	"version": "0.0.1",
 	"main": "dist",
 	"typings": "dist",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/barbarbar338/readtime"
+		"url": "https://github.com/barbarbar338/calculate-readtime"
 	},
 	"author": {
 		"email": "demirci.baris38@gmail.com",
