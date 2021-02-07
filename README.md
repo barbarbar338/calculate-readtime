@@ -14,8 +14,8 @@ Customizable, easy-to-use, zero-dependency read time calculator.
 
 # 🐮 Installation
 
--   Using NPM: Run `npm install calculate-readtime`
--   Using Yarn: Run `yarn add calculate-readtime`
+- Using NPM: `npm install calculate-readtime --save`
+- Using Yarn: `yarn add calculate-readtime`
 
 # 🧶 Usage
 
@@ -54,4 +54,4 @@ calculate(myText, options); // => returns "bir dakikadan kısa"
 
 # 🧦 Contributing
 
-Fell free to use Github's features
+Fell free to use GitHub's features.
