@@ -40,7 +40,7 @@ const options = {
 	wpm: 200,
 };
 
-calculate(myText); // => returns "bir dakikadan kısa"
+calculate(myText, options); // => returns "bir dakikadan kısa"
 ```
 
 # 🎈 Options
