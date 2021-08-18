@@ -54,4 +54,4 @@ calculate(myText, options); // => returns "bir dakikadan kısa"
 
 # 🧦 Contributing
 
-Fell free to use GitHub's features.
+Feel free to use GitHub's features.
