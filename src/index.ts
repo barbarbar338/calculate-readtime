@@ -8,8 +8,8 @@ export interface IReadTimeOptions {
 const defaults = {
 	wpm: 200,
 	lessThanOne: "less than a minute",
-	singular: "minute",
-	plural: "minutes",
+	singular: "%{minute} minute",
+	plural: "%{minute} minutes",
 };
 
 export function calculate(
@@ -21,11 +21,17 @@ export function calculate(
 	const words = text.trim().split(/\s+/g);
 	let time = words.length / merged.wpm;
 
+	const regtoken = new RegExp("%{minute}", "gim");
+
 	let result: string;
-	if (time < 1) result = merged.lessThanOne;
+	if (time < 1)
+		result = merged.lessThanOne.replace(regtoken, time.toString());
 	else {
 		time = Math.round(time);
-		result = `${time} ${time > 1 ? merged.plural : merged.singular}`;
+		result =
+			time > 1
+				? merged.plural.replace(regtoken, time.toString())
+				: merged.singular.replace(regtoken, time.toString());
 	}
 
 	return result;

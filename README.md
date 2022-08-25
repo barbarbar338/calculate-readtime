@@ -14,8 +14,8 @@ Customizable, easy-to-use, zero-dependency read time calculator.
 
 # 🐮 Installation
 
-- Using NPM: `npm install calculate-readtime --save`
-- Using Yarn: `yarn add calculate-readtime`
+-   Using NPM: `npm install calculate-readtime --save`
+-   Using Yarn: `yarn add calculate-readtime`
 
 # 🧶 Usage
 
